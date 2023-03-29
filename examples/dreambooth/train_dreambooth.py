@@ -479,7 +479,6 @@ def main(args):
                             torch_dtype=torch_dtype
                         ),
                         torch_dtype=torch_dtype,
-                        safety_checker=None,
                         revision=args.revision
                     )
                     pipeline.scheduler = DDIMScheduler.from_config(pipeline.scheduler.config)
