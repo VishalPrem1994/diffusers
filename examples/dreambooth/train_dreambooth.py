@@ -478,6 +478,7 @@ def main(args):
                             revision=None if args.pretrained_vae_name_or_path else args.revision,
                             torch_dtype=torch_dtype
                         ),
+                        safety_checker=None,
                         torch_dtype=torch_dtype,
                         revision=args.revision
                     )
